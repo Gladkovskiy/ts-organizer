@@ -1,14 +1,8 @@
 import {useDispatch} from 'react-redux'
 import {bindActionCreators} from 'redux'
-/* import * as UsersActionCreators from '../store/action/user'
-import * as TodoActionCreators from '../store/action/todo'
+import * as AuthActionCreators from '../store/action/auth'
 
 export const useActionUsers = () => {
   const dispatch = useDispatch()
-  return bindActionCreators(UsersActionCreators, dispatch)
+  return bindActionCreators(AuthActionCreators, dispatch)
 }
-
-export const useActionTodos = () => {
-  const dispatch = useDispatch()
-  return bindActionCreators(TodoActionCreators, dispatch)
-} */

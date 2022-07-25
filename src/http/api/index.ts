@@ -2,7 +2,7 @@ import axios from 'axios'
 
 //запросы без  авторизации
 export const $host = axios.create({
-  baseURL: 'http://jsonplaceholder.typicode.com',
+  baseURL: '',
 })
 
 //запросы с авторизацией
