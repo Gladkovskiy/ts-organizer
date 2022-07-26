@@ -2,7 +2,7 @@ import {Card, Form, Input, Button} from 'antd'
 import React, {FC} from 'react'
 import {useActionUsers} from '../hooks/useActions'
 import {useAppSelector} from '../hooks/useSelectors'
-import {useGetUsers} from '../http/query/user'
+import {useGetUsers} from '../http/query/user/user'
 import {rules} from '../utils/rules'
 
 const LoginForm: FC = () => {

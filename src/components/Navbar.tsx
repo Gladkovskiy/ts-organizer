@@ -24,7 +24,9 @@ const Navbar: FC = () => {
         <Menu theme="dark" style={{display: 'flex', alignItems: 'center'}}>
           {isAuth ? (
             <>
-              <div style={{color: 'white'}}>Andrey Gladkov</div>
+              <div style={{color: 'white', marginRight: 20}}>
+                {localStorage.getItem('username')}
+              </div>
               <Menu.Item key={1} onClick={exit}>
                 Выйти
               </Menu.Item>

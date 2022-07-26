@@ -1,9 +1,9 @@
 import {useQuery} from '@tanstack/react-query'
 import {useNavigate} from 'react-router-dom'
-import {useActionUsers} from '../../hooks/useActions'
-import {useAppSelector} from '../../hooks/useSelectors'
-import {RoutesName} from '../../types/routes'
-import {getUsers} from '../api/user'
+import {useActionUsers} from '../../../hooks/useActions'
+import {useAppSelector} from '../../../hooks/useSelectors'
+import {RoutesName} from '../../../types/routes'
+import {getUsers} from '../../api/user'
 
 export const useGetUsers = () => {
   const {setError, setAuth} = useActionUsers()
@@ -13,7 +13,7 @@ export const useGetUsers = () => {
   const query = useQuery(['users'], getUsers, {
     enabled: false,
     onSuccess(data) {
-      const login = data.find(
+      const login = data?.find(
         item =>
           item.password === user.password && item.username === user.username
       )

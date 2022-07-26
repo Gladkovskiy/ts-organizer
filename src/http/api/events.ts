@@ -1,7 +1,7 @@
 import {$host} from '.'
 import {IUser} from '../../types/user'
 
-export const getUsers = async () => {
+export const getGuests = async () => {
   try {
     const {data} = await $host.get<IUser[]>('./users.json')
     return data
