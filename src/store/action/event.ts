@@ -1,3 +1,4 @@
+import {IEvent} from '../../types/event'
 import {IUser} from '../../types/user'
 import {EventsActionTypes} from '../reducers/event/types'
 
@@ -8,7 +9,7 @@ export const setGuests = (guests: IUser[]) => {
   }
 }
 
-export const setEvents = (events: IUser[]) => {
+export const setEvents = (events: IEvent[]) => {
   return {
     type: EventsActionTypes.SET_EVENTS,
     payload: events,
